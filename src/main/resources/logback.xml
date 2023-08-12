@@ -1,0 +1,31 @@
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} [%t] %highlight([%level]) %cyan(%logger{36}) - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+<!--    <appender name="FILE" class="ch.qos.logback.core.FileAppender">-->
+<!--        <file>../logs/testFile.log</file>-->
+<!--        <append>true</append>-->
+<!--        &lt;!&ndash; set immediateFlush to false for much higher logging throughput &ndash;&gt;-->
+<!--        <immediateFlush>true</immediateFlush>-->
+<!--        &lt;!&ndash; encoders are assigned the type-->
+<!--             ch.qos.logback.classic.encoder.PatternLayoutEncoder by default &ndash;&gt;-->
+<!--        <encoder>-->
+<!--            <pattern>%-4relative [%thread] %-5level %logger{35} -%kvp- %msg%n</pattern>-->
+<!--        </encoder>-->
+
+<!--    </appender>-->
+
+    <!--    <logger name="root" level="INFO"/>-->
+<!--    <logger name="com.auth.server" level="DEBUG" additivity="false">-->
+<!--        <appender-ref ref="FILE"/>-->
+<!--    </logger>-->
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>
