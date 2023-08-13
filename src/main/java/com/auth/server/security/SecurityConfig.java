@@ -32,12 +32,12 @@ public class SecurityConfig {
                 .formLogin(loginForm -> {
 
                 })
-                .csrf(csrf->{csrf.disable();}) //need to show h2-console
-                .headers(headers -> { //need to show h2-console
-                    headers.frameOptions(options -> {
-                        options.disable();
-                    });
-                })
+//                .csrf(csrf->{csrf.disable();}) //need to show h2-console
+//                .headers(headers -> { //need to show h2-console
+//                    headers.frameOptions(options -> {
+//                        options.disable();
+//                    });
+//                })
                 .build();
     }
 
